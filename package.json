@@ -1,0 +1,16 @@
+{
+  "name": "deploy-npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ali-oss": "^6.17.1",
+    "compressing": "^1.6.2",
+    "fs-extra": "^10.1.0",
+    "optimist": "^0.6.1"
+  },
+  "devDependencies": {}
+}
