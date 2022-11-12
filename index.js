@@ -23,7 +23,7 @@ function build() {
     const destPath = resolveTarget(name)
     const tgzName = `${name}-${version}.tgz`
     const tgzPath = resolveTarget(tgzName)
-    if(fs.statSync(destPath)) fs.removeSync(destPath)
+    if(fs.existsSync(destPath)) fs.removeSync(destPath)
     fs.renameSync(distPath, destPath)
     fs.copyFileSync(packagePath, resolveTarget(`${name}/package.json`))
     await compressing.tgz.compressDir(destPath, tgzPath)
